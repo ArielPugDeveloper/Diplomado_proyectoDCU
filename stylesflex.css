@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Navegación con Flexbox */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: red;
+    padding: 0.5rem 3rem;
+    color: white;
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  /* Contenido con CSS Grid */
+  .main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Dos columnas: principal y barra lateral */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+  }
+
+  .article {
+    background: burlywood;
+    padding: 1.5rem;
+    border-radius: 60px;
+  }
+
+  .sidebar {
+    background: #e2e2e2;
+    padding: 1.5rem;
+    border-radius: 60px;
+  }
+
+  /* Responsividad simple */
+  @media (max-width: 768px) {
+    .main-content {
+      grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+  }
